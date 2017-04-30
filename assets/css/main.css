@@ -1,0 +1,70 @@
+/*@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("font-awesome.min.css");*/
+
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.85em;
+}
+
+/* Nav */
+
+#nav{
+  background-color: #282828;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav a{
+  padding: 0.2em 1em 0.2em 1em;
+  margin: 0.6em 0.2em 0.6em 0.2em;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+#nav a:hover {
+  background: #383838;
+}
+
+#nav a:active {
+  background: #484848;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 737px) {
+  body{
+      font-size: 11pt;
+  }
+
+  .wrapper {
+    padding: 8em 0 8em 0;
+    text-align: center;
+  }
+
+  .wrapper.first {
+    padding-top: 12em;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 737px) and (max-width: 1200px) {
+    body{
+      font-size: 13pt;
+  }
+
+  .wrapper {
+    padding: 5em 0 5em 0;
+    text-align: center;
+  }
+
+  .wrapper.first {
+    padding-top: 9em;
+  }
+}
