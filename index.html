@@ -13,9 +13,41 @@
   <link rel="icon" type="image/png" href="img/favicon-32x32.png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Carlos J. Zubiaga</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--
+       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#projects" id="navbarProjectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publications
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarProjectsDropdown">
+              <li><a class="dropdown-item" href="#SED">SED</a></li>
+              <li><a class="dropdown-item" href="#InriaTech">InriaTech</a></li>
+              <li><a class="dropdown-item" href="#Magnet">Magnet</a></li>
+              <li><a class="dropdown-item" href="#ITCL">ITCL</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-4">
@@ -27,9 +59,9 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="projects">
     <h1>Projects</h1>
-    <h2>Collaborations as part of the <a href="https://iww.inria.fr/sed-sophia/">SED</a> team at <a href="https://www.inria.fr/en/centre-inria-sophia-antipolis-mediterranee">Inria Sophina Antipolis</a></h2>
+    <h2 id="SED">Collaborations as part of the <a href="https://iww.inria.fr/sed-sophia/">SED</a> team at <a href="https://www.inria.fr/en/centre-inria-sophia-antipolis-mediterranee">Inria Sophina Antipolis</a></h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
       <div class="col">
         <div class="card">
@@ -122,7 +154,7 @@
         </div>
       </div>
     </div>
-    <h2>As part of InriaTech team at <a href="https://www.inria.fr/en/centre-inria-sophia-antipolis-mediterranee">Inria Sophina Antipolis</a></h2>
+    <h2 id="InriaTech">As part of InriaTech team at <a href="https://www.inria.fr/en/centre-inria-sophia-antipolis-mediterranee">Inria Sophina Antipolis</a></h2>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
@@ -152,7 +184,7 @@
         </div>
       </div>
     </div>
-    <h2>As part of the <a href="https://team.inria.fr/magnet/">Magnet team</a> at <a href="https://www.inria.fr/en/centre-inria-lille-nord-europe">Inria Lille</a></h2>
+    <h2 id="Magnet">As part of the <a href="https://team.inria.fr/magnet/">Magnet team</a> at <a href="https://www.inria.fr/en/centre-inria-lille-nord-europe">Inria Lille</a></h2>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
@@ -181,7 +213,7 @@
         </div>
       </div>
     </div>
-    <h2>As part of the <a href="https://itcl.es/en/research/simulation-and-virtual-reality/">Simulation and Virtual Reality</a> department at <a href="https://itcl.es">Instituo de Castilla y León</a></h2>
+    <h2 id="ITCL">As part of the <a href="https://itcl.es/en/research/simulation-and-virtual-reality/">Simulation and Virtual Reality</a> department at <a href="https://itcl.es">Instituo de Castilla y León</a></h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
       <div class="col">
         <div class="card">
@@ -229,7 +261,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="publications">
     <h1>Publications</h1>
     <div class="card">
       <div class="row g-0">
@@ -304,4 +336,6 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-  nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
